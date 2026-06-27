@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#000000" />
+
+    <title>Coração de Energia</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.185.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+    <canvas id="scene" aria-label="Coração holográfico formado por partículas azuis"></canvas>
+
+    <div id="loading" role="status" aria-live="polite">
+        <div class="loading-panel">
+            <img id="loadingGif" class="loading-gif" src="home.gif" alt="" />
+
+            <div class="loading-track">
+                <span id="loadingBar"></span>
+            </div>
+
+            <small id="loadingPercent">0%</small>
+        </div>
+    </div>
+
+    <div id="finalVideoWrap" aria-hidden="true">
+        <video id="finalVideo" src="num-sei.mp4" playsinline muted loop preload="auto"></video>
+    </div>
+
+    <div class="vignette" aria-hidden="true"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
